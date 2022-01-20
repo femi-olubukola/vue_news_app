@@ -33,21 +33,20 @@
 </template>
 
 <script>
-import { computed } from "vue";
 import sectionsData from "@/components/sections";
 export default {
   props: {
     modelValue: String,
     loading: Boolean
   },
-  setup(props, { emit }) {
-    const section = computed({
-      get: () => props.modelValue,
-      set: value => emit("update:modelValue", value),
-    })
-    return {
-      section,
-    }  },
+  // setup(props, { emit }) {
+  //   const section = computed({
+  //     get: () => props.modelValue,
+  //     set: value => emit("update:modelValue", value),
+  //   })
+  //   return {
+  //     section,
+  //   }  },
   data() {
     return {
       sections:sectionsData,

@@ -4,7 +4,7 @@
     <div class="h-98">
       <div class="h-10">
         <a
-          class="text-xl font-bold text-center text-blue-300 hover:text-gray-800 hover:underline"
+          class="text-l font-bold text-center text-blue-300 hover:text-gray-800 hover:underline"
           :href="post.url"
           target="_blank"
           rel="noreferrer">

@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 body{
-    @apply antialiased text-2xl text-green-500 bg-blue-500;
+    @apply antialiased text-sm text-green-500 bg-blue-500;
     font-family: 'open sans';
 }
 

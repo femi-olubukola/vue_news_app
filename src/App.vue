@@ -43,6 +43,7 @@ export default {
       posts: [],
       loading: false,
       error: null,
+      home: ''
     }
   },
   methods: {
@@ -58,7 +59,12 @@ export default {
       return imgObj ? imgObj : defaultImg
     },
     async fetchNews(category) {
-      this.loading = true
+      if(this.home === 'created') {
+        this.loading = false
+      }
+      else (
+          this.loading = true
+      )
       try {
         if (!category) {
           category = 'home'
@@ -99,7 +105,9 @@ export default {
     },
   },
   mounted() {
+    this.home = 'created'
     this.fetchNews()
+    this.home = ''
   },
 }
 </script>
