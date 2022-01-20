@@ -107,7 +107,7 @@ export default {
   mounted() {
     this.home = 'created'
     this.fetchNews()
-    this.home = ''
+    this.home = 'home'
   },
 }
 </script>

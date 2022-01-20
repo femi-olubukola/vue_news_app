@@ -15,7 +15,8 @@
       <v-select
           :items="sections"
           v-model="value"
-          solo>
+          solo
+      label="home">
       </v-select>
     </div>
     <!-- End of select dropdown -->
