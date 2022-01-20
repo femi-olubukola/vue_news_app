@@ -1,0 +1,14 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+body{
+    @apply antialiased text-2xl text-green-500 bg-blue-500;
+    font-family: 'open sans';
+}
+
+#app{
+    @apply flex flex-col min-h-screen overflow-x-hidden;
+}
